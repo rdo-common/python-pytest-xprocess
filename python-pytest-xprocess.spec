@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.12.1
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Pytest plugin to manage external processes across test runs
 
 License:        MIT
@@ -64,6 +64,9 @@ chmod -x README.rst
 %{python3_sitelib}/pytest_xprocess-%{version}-py?.?.egg-info
 
 %changelog
+* Thu Oct 03 2019 Miro Hrončok <mhroncok@redhat.com> - 0.12.1-4
+- Rebuilt for Python 3.8.0rc1 (#1748018)
+
 * Mon Aug 19 2019 Miro Hrončok <mhroncok@redhat.com> - 0.12.1-3
 - Rebuilt for Python 3.8
 
