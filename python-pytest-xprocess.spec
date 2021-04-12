@@ -2,8 +2,8 @@
 %global pypi_name pytest-xprocess
 
 Name:           python-%{pypi_name}
-Version:        0.13.1
-Release:        3%{?dist}
+Version:        0.17.1
+Release:        1%{?dist}
 Summary:        Pytest plugin to manage external processes across test runs
 
 License:        MIT
@@ -54,6 +54,9 @@ chmod -x README.rst
 %install
 %py3_install
 
+%check
+%pytest
+
 %files -n python3-%{pypi_name}
 %license LICENSE
 %doc README.rst
@@ -63,6 +66,10 @@ chmod -x README.rst
 %{python3_sitelib}/pytest_xprocess-%{version}-py%{python3_version}.egg-info
 
 %changelog
+* Mon Apr 12 2021 Frantisek Zatloukal <fzatlouk@redhat.com> - 0.17.1-1
+- Update to pytest-xprocess-0.17.1
+- Enabled tests during build
+
 * Wed Jan 27 2021 Fedora Release Engineering <releng@fedoraproject.org> - 0.13.1-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
 
