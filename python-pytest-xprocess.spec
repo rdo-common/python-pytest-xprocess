@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.17.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Pytest plugin to manage external processes across test runs
 
 License:        MIT
@@ -66,6 +66,9 @@ chmod -x README.rst
 %{python3_sitelib}/pytest_xprocess-%{version}-py%{python3_version}.egg-info
 
 %changelog
+* Fri Jun 04 2021 Python Maint <python-maint@redhat.com> - 0.17.1-2
+- Rebuilt for Python 3.10
+
 * Mon Apr 12 2021 Frantisek Zatloukal <fzatlouk@redhat.com> - 0.17.1-1
 - Update to pytest-xprocess-0.17.1
 - Enabled tests during build
