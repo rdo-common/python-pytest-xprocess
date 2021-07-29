@@ -66,7 +66,7 @@ chmod -x README.rst
 %{python3_sitelib}/pytest_xprocess-%{version}-py%{python3_version}.egg-info
 
 %changelog
-* Mon Apr 12 2021 Frantisek Zatloukal <fzatlouk@redhat.com> - 0.18.1-1
+* Thu Jul 29 2021 Frantisek Zatloukal <fzatlouk@redhat.com> - 0.18.1-1
 - Update to pytest-xprocess-0.18.1
 - Fixes https://bugzilla.redhat.com/show_bug.cgi?id=1986637
 
