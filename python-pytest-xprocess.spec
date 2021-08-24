@@ -55,6 +55,8 @@ chmod -x README.rst
 %py3_install
 
 %check
+# Needs pytest>=5.3.0
+rm -f tests/test_interruption_clean_up.py
 %pytest
 
 %files -n python3-%{pypi_name}
